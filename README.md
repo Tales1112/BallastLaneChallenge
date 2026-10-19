@@ -99,11 +99,11 @@ dotnet test -c Release -m:1 --filter "Category=Integration"
 dotnet test -c Release -m:1 --filter "Transport=Kestrel"
 ```
 
-Integration tests also cover full host restarts, repeatable demo seeding, concurrent duplicate registration, rejected mutations preserving data, CSRF identity/session binding and production cookie/redirect configuration. The Kestrel test starts a separate process on an automatically assigned loopback port, uses its own temporary database, and stops that process after the test. It does not use the running application on port 5180. See [integration verification](docs/INTEGRATION-TESTS.md) for details.
+Integration tests also cover full host restarts, repeatable demo seeding, concurrent duplicate registration, rejected mutations preserving data, CSRF identity/session binding and production cookie/redirect configuration. The Kestrel test starts a separate process on an automatically assigned loopback port, uses its own temporary database, and stops that process after the test. It does not use the running application on port 5180.
 
 The test sources were started before the use-case implementation. The first attempted test run was blocked by package restoration; later integration failures were reproduced and corrected. The project does **not** claim a fully recorded red/green TDD history or a measured line-coverage percentage. The commit history should not be fabricated.
 
-See [docs/DEMO.md](docs/DEMO.md) for a presentation outline and manual checks. The requested Generative AI tools section and its evaluation criterion are excluded.
+The requested Generative AI tools section and its evaluation criterion are excluded.
 
 ## Development and publishing
 
