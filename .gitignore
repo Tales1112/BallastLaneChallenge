@@ -426,3 +426,15 @@ FodyWeavers.xsd
 
 # Official VS Code C# Dev Kit Extension exclusion
 #*.lscache
+
+# TaskFlow local artifacts
+**/bin/
+**/obj/
+**/node_modules/
+**/App_Data/
+**/TestResults/
+.idea/
+*.db
+*.db-shm
+*.db-wal
+.env*
